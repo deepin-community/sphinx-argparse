@@ -1,0 +1,29 @@
+Source: sphinx-argparse
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: ChangZhuo Chen (陳昌倬) <czchen@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-pytest,
+               python3-setuptools,
+               python3-sphinx,
+               python3-sphinx-rtd-theme,
+Standards-Version: 4.5.1
+Homepage: https://github.com/ribozz/sphinx-argparse
+Rules-Requires-Root: no
+Vcs-Git: https://salsa.debian.org/python-team/packages/sphinx-argparse.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/sphinx-argparse
+
+Package: python3-sphinx-argparse
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, ${sphinxdoc:Depends}
+Enhances: python3-sphinx
+Built-Using: ${sphinxdoc:Built-Using}
+Description: Sphinx extension for argparse commands and options (Python 3)
+ sphinx-argparse is an extension for Sphinx (Python documentation generator)
+ that allows one to generate documentation for command line tools using argparse
+ (command-line parsing library) automatically.
+ .
+ This package contains the extension for Sphinx running on Python 3.

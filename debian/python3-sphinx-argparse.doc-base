@@ -1,0 +1,12 @@
+Document: python3-sphinx-argparse
+Title: documentation for the argparse extension for Sphinx
+Author: Aleksandr Rudakov <ribozz@gmail.com>
+Abstract: sphinx-argparse is an extension for Sphinx
+ (Python documentation generator) that allows one to generate
+ documentation for command line tools using argparse
+ (command-line parsing library) automatically.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python3-sphinx-argparse/html/index.html
+Files: /usr/share/doc/python3-sphinx-argparse/html/*.html

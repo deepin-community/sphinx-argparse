@@ -1,0 +1,2 @@
+Tests: python3-sphinx-argparse
+Depends: python3-all, python3-pytest, python3-sphinx, python3-sphinx-argparse

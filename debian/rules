@@ -1,0 +1,17 @@
+#! /usr/bin/make -f
+#export DH_VERBOSE=1
+export PYBUILD_NAME=sphinx-argparse
+export PYBUILD_TEST_ARGS=-v
+
+%:
+	dh $@ --with python3,sphinxdoc --buildsystem=pybuild
+
+override_dh_installdocs:
+	cd docs && PYTHONPATH=$(CURDIR) python3 -m sphinx -N -bhtml . html
+	dh_installdocs
+
+override_dh_installchangelogs:
+	dh_installchangelogs README.md
+
+override_dh_compress:
+	dh_compress -Xchangelog.html

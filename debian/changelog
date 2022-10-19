@@ -1,0 +1,101 @@
+sphinx-argparse (0.2.5-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 10 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Bastian Germann ]
+  * New upstream version 0.2.5
+  * lintian: runtime-test-file-uses-installed-python-versions
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Michael R. Crusoe ]
+  * Standards-Version: 4.5.1 (routine-update)
+  * debhelper-compat 13 (routine-update)
+  * Add salsa-ci file (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * Incorporate patch submitted to upstream to fix failing tests.
+    Closes: #977097
+  * debian/control: Document which version of sphinx was used to build
+    the binary package.
+
+ -- Michael R. Crusoe <crusoe@debian.org>  Sat, 23 Jan 2021 15:00:56 +0100
+
+sphinx-argparse (0.2.2-3) unstable; urgency=medium
+
+  * Team upload.
+  * Use debhelper-compat instead of debian/compat.
+  * Drop Python 2 support.
+
+ -- Ondřej Nový <onovy@debian.org>  Sat, 03 Aug 2019 12:21:06 +0200
+
+sphinx-argparse (0.2.2-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * Use 'python3 -m sphinx' instead of sphinx-build for building docs
+
+  [ Hanno Stock ]
+  * Fix aliased subcommands (patch, closes: #922880)
+
+ -- Hanno Stock <opensource@hanno-stock.de>  Tue, 26 Feb 2019 14:44:40 +0100
+
+sphinx-argparse (0.2.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    - No longer uses sphinx.util.compat (Closes: #896636).
+
+  [ ChangZhuo Chen (陳昌倬) ]
+  * Add ChangZhuo Chen as Uploaders (Closes: #840038).
+  * Bump compat to 10.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+
+  [ Dmitry Shachnev ]
+  * Remove usage of Markdown options in docs/markdown.rst. Upstream code for
+    Markdown requires CommonMark 0.5.6, which is not yet in Debian.
+  * Fix sphinx-build invocation in debian/rules.
+  * Prevent dh_compress from compressing changelog.html.
+  * Drop unneeded dh_auto_test override, rely on pybuild magic.
+  * Make autopkgtests test the installed version of the package.
+  * Bump Standards-Version to 4.1.4, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 28 Jun 2018 10:30:18 +0300
+
+sphinx-argparse (0.1.15-3) unstable; urgency=medium
+
+  * Orphan package:
+    + deb/control: put Debian QA into Maintainer field, drop Uploaders.
+
+ -- Daniel Stender <stender@debian.org>  Mon, 19 Jun 2017 22:26:51 +0200
+
+sphinx-argparse (0.1.15-2) unstable; urgency=medium
+
+  * deb/control:
+    + updated uploader email address.
+    + add python{,3}-sphinx-rtd-theme to b-deps (Closes: #827813).
+    + removed tabs from indentations.
+    + bumped standards to 3.9.8 (no changes needed).
+
+    [ Ondřej Nový ]
+  * Fixed VCS URL (https).
+
+ -- Daniel Stender <stender@debian.org>  Sat, 25 Jun 2016 16:16:04 +0200
+
+sphinx-argparse (0.1.15-1) unstable; urgency=medium
+
+  * Initial release (Closes: #794776).
+
+ -- Daniel Stender <debian@danielstender.com>  Wed, 20 Jan 2016 21:46:46 +0100

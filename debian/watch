@@ -1,0 +1,3 @@
+version=3
+opts="filenamemangle=s/(?:.*)?v?(\d[\d\.]+)\.tar\.gz/sphinx-argparse-$1.tar.gz/" \
+https://github.com/ribozz/sphinx-argparse/releases (?:.*/)?v?(\d[\d\.]+)\.tar\.gz
