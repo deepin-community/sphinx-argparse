@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: sphinx-argparse
-Source: https://github.com/ribozz/sphinx-argparse
+Source: https://github.com/ashb/sphinx-argparse
 
 Files: *
 Copyright: 2013-2015 Aleksandr Rudakov <ribozz@gmail.com>

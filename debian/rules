@@ -1,13 +1,13 @@
 #! /usr/bin/make -f
-#export DH_VERBOSE=1
+export DH_VERBOSE=1
 export PYBUILD_NAME=sphinx-argparse
-export PYBUILD_TEST_ARGS=-v
+export PYBUILD_TEST_ARGS=-vv
 
 %:
 	dh $@ --with python3,sphinxdoc --buildsystem=pybuild
 
 override_dh_installdocs:
-	cd docs && PYTHONPATH=$(CURDIR) python3 -m sphinx -N -bhtml . html
+	cd docs && PYTHONPATH=$(CURDIR)/debian/python3-sphinx-argparse/usr/lib/$(shell py3versions -d)/dist-packages/ python3 -m sphinx -N -bhtml . html
 	dh_installdocs
 
 override_dh_installchangelogs:
