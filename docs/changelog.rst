@@ -2,6 +2,23 @@
 Change log
 **********
 
+0.3.2
+#####
+
+ * Minimum python version is now 3.6
+ * Remove colon from "Sub-commands" title
+
+0.3.1
+#####
+
+ * Include tests in sdist
+
+0.3.0
+#####
+
+ * First release from ashb/sphinx-argparse
+ * Declare that parallel builds are supported (issue #131).
+
 0.2.5
 #####
 

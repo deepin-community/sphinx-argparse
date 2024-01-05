@@ -1,4 +1,0 @@
-0001-Fix-aliased-subcommands-Python3.patch
-0002-fix-tests.patch
-0003-Remove-usage-of-Markdown-options-in-docs-markdown.rs.patch
-pytest_prog_name_varies.patch
